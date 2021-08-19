@@ -1,21 +1,32 @@
 import BoxImage from "./boximage";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
 function Banner(){
 
 	return (
 
 		<>
-		<div className="container" style={{marginTop:"2%"}}>
+		<div className="container-fluid" style={{marginTop:"2%"}}>
 		  <div className="row">
 		    <div className="col-md-6 col-sm-12 d-flex">
 		      <div className="card">
 				  <div className="card-body">
-				    <h1 className="card-title">Explore</h1>
-				    <p className="card-text">Capture the flag (CTF) is a traditional outdoor sport where two or more teams each have a flag (or other markers) and the objective is to capture the other team's flag, located at the team's "base", and bring it safely back to their own base. Enemy players can be "tagged" by players in their home territory and, depending on the rules, they may be out of the game, become members of the opposite team, sent back to their own territory, or frozen in place ("in jail") until freed by a member of their own team.</p>
+				    <h1 className="card-title">HEX</h1>
+				    <p className="card-text">A hexadecimal color value is a six-digit code preceded by a # sign;
+				    Each hexadecimal digit represents four binary digits (bits), and the primary use of hexadecimal notation is a human-friendly representation of binary-coded values in computing and digital electronics.
+				    The hex system allows us to represent the values of a single byte with just two digits as the two digit hex values also range from 0 - 255. Hex is more compact than the Base2 system and it looks and acts a lot more like the decimal system than Base2. In addition, every value that can be represented by a byte can be represented in hex by the values between 0x00 - 0xFF (255).
+				    </p>
 				    <a href="#" class="btn btn-warning">Explore</a>
-				    <h2 className="card-title">A student, A participant, A learner ... Who am I?</h2>
+				    <h2 className="card-title">Hex usage:<b> CTF</b></h2>
 				    <p className="card-text"></p>
-				    <a href="#" className='fs-2'>Find out>>></a>
+				    <Link to="/projects" className='fs-2'>Find out>>></Link>
 				  </div>
 				</div>
 				
